@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.Books{
+    display: flex;
+    justify-content: space-between;
+     gap: 20px;
+    width: 70%;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 20px;
+    margin: auto;
+}
+
+.Card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    background-color: #EFF8FF;
+    width: 210px;
+    min-height: 380px;
+    padding: 10px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    width: 100%;
+    height: 100px;
+    padding: 6px;
+    border-radius: 7px;
+    background-color: white;
+}
+.details p{
+    color: rgba(0, 0, 0, 0.516);
+}
+.details h3{
+    font-size: 20px;
+}
+.details h4{
+    color: rgba(0, 0, 0, 0.505);
+}
+.btn{
+    display: flex;
+      border-radius: 6px;
+    background-color: rgb(255, 119, 0);
+    color: white;
+    font-weight: 600px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.image{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 90px;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+    
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    gap: 10px;
+    margin: 20px;
+    position: relative;
+}
+.search i{
+    position: absolute;
+    padding-left:10px ;
+    left: 0;
+}
+.search input{
+    border: none;
+    outline: none;
+    width: 350px;
+    background-color:#EFF8FF;
+    height: 30px;
+    padding: 0 60px;
+}
+#categorySelect{
+   border: none;
+   outline: none;
+   width: 200px;
+   height: 30px;
+   background-color: #EFF8FF;
+}
+
+.Container{
+width: 100%;
+height: 100vh;
+position: relative;
+}
+.addBook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 100%;
+  height: 120vh;
+  z-index: 20;
+  background-color: rgba(158, 151, 151, 0.589);
+position: absolute;
+top: -80px;
+display: none;
+}
+.addBook.open{
+display: flex
+;}
+.addBook form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    background-color:  #EFF8FF;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 100;
+}
+form .bookTitle, form .author, form .category{
+    padding: 2px;
+border-radius: 1px 10px 0px 0px;
+    background-color:  #d9e8f3;
+    height: 20px;
+}
+form .image{
+    padding: 5px;
+    background-color:  #d9e8f3;
+    height: auto;
+}
+form .addBookButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #EFF8FF;
+    color:  rgb(27, 56, 75);
+    font-weight: 600px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:  rgb(182, 210, 212);
+    color:  rgb(27, 56, 75);
+    font-weight: 600px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.openAddBookForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(182, 210, 212);
+    color: rgb(27, 56, 75);
+    font-weight: 600px;
+    font-size: 15px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+  /* read more button */
+  .Card{
+    position: relative;
+  }
+.readMore {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s;
+}
+
+
+
+.readMore:hover {
+    background: #217dbb;
+}
+
+/* read more interface */
+.readMoreData {
+    position: absolute;
+
+top: -40px;
+    width: 90%;
+    background: white;
+ padding: 10px;
+    border-bottom: 2px solid #3498db;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+   border-radius: 0 0 12px 12px;
+        opacity: 0;
+     z-index: 10;
+     transition: 0.3s ease;
+}
+
+
+.readMoreData.open {
+    top: 10px;
+    opacity: 1;
+  }
+
+/* Close Button */
+.readMoreData .close {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: #e74c3c;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.available-status{
+    display: flex;
+    gap:5px ;
+}
